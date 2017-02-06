@@ -1,0 +1,13 @@
+v2.0 raw
+
+6e #ori $r0,14
+0a #msd $rs
+66 #ori $r1,6
+18 #mxd $r1
+11 #sub $rs - $r1
+0a #msd $rs
+61 #ori $r1,1
+08 #mxd $r0
+04 #sll
+18 #mxd $r1
+30 #disp $r1 in box 0
