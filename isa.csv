@@ -1,0 +1,24 @@
+7,6,5,4,3,2,1,0,Name,Meaning,Notes
+0,,,rx,0,,,,add,R[$rd] = R[$rs] + R[$rx],R-type
+0,,,rx,1,,,,sub,R[$rd] = R[$rs] - R[$rx],R-type
+0,,,rx,2,,,,or,R[$rd] = R[$rs] | R[$rx],R-type
+0,,,rx,3,,,,and,R[$rd] = R[$rs] & R[$rx],R-type
+0,,,rx,4,,,,sll,R[$rd] = R[$rs] <<  R[$rx],Shift left logical
+0,,,rx,5,,,,slt,R[$rd] = R[$rs] < R[$rx],Set $rd to 1 if $rs < $rx
+0,,,rx,6,,,,srl,R[$rd] = R[$rs] >> R[$rx],Shift right logical
+0,,,rx,7,,,,sra,R[$rd] = R[$rs] >> R[$rx],"Shift right, sign-extend"
+0,,,rx,8,,,,mxd,R[$rx] = R[$rd],Move value $rd into $rx
+0,,,rx,9,,,,msx,R[$rs] = R[$rx],Move value $rx into $rs
+0,,,rx,10,,,,msd,R[$rs] = R[$rd],Move value $rd into $rs
+0,,,rx,11,,,,not,R[$rd] = !R[$rx],Bitwise NOT
+0,,,rx,12,,,,neg,R[$rd] =  -1 * R[$rx],Negate
+0,,,rx,13,,,,jr,PC = R[$rx],Jump Register
+0,,,rx,14,,,,none,none,no instruction
+0,,,rx,15,,,,none,none,no instruction
+1,,,rx,immediate,,,,disp,DISP[imm] = R[$rx],Display Instruction
+2,,,rx,immediate,,,,lui,R[$rd] = imm << 4,Load Upper Immediate
+3,,,rx,immediate,,,,ori,R[$rd] =  R[$rx] | imm,Or Immediate
+4,,,rx,immediate,,,,lw,R[$rd] =  MEM[R[$rx] + imm],Load Word
+5,,,rx,immediate,,,,sw,MEM[R[$rx] + imm] = R[$rs],Store Word
+6,,,address,,,,,jump,PC = (PC & 0xE0) | address,J-type
+7,,,offset,,,,,beq,"if $r0=$r1, PC=PC+1+offset",J-type
