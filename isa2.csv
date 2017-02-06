@@ -1,7 +1,7 @@
-7 6 5,4,3,2,1,0,Name,Meaning,Notes
-1,rx,immediate,,,,disp,DISP[imm] = R[$rx],Display Instruction
-2,rx,immediate,,,,lui,R[$rd] = imm << 4,Load Upper Immediate
-3,rx,immediate,,,,ori,R[$rd] =  R[$rx] | imm,Or Immediate
-4,rx,immediate,,,,lw,R[$rd] =  MEM[R[$rx] + imm],Load Word
-5,rx,immediate,,,,sw,MEM[R[$rx] + imm] = R[$rs],Store Word
+7 6 5,4,3 2 1,0,Name,Meaning,Notes
+1,rx,immediate,,disp,DISP[imm] = R[$rx],Display Instruction
+2,rx,immediate,,lui,R[$rd] = imm << 4,Load Upper Immediate
+3,rx,immediate,,ori,R[$rd] =  R[$rx] | imm,Or Immediate
+4,rx,immediate,,lw,R[$rd] =  MEM[R[$rx] + imm],Load Word
+5,rx,immediate,,sw,MEM[R[$rx] + imm] = R[$rs],Store Word
 
