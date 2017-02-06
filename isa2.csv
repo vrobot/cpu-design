@@ -4,5 +4,7 @@
 3,rx,immediate,,,,ori,R[$rd] =  R[$rx] | imm,Or Immediate
 4,rx,immediate,,,,lw,R[$rd] =  MEM[R[$rx] + imm],Load Word
 5,rx,immediate,,,,sw,MEM[R[$rx] + imm] = R[$rs],Store Word
+
+
 6,address,,,,,jump,PC = (PC & 0xE0) | address,J-type
 7,offset,,,,,beq,"if $r0=$r1, PC=PC+1+offset",J-type
