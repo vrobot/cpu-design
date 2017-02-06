@@ -1,5 +1,5 @@
 7,6,5,4,3,2,1,0,Name,Meaning,Notes
-0,,,rx,0,,,,add,R[$rd] = R[$rs] + R[$rx],R-type
+ , ,0,rx,0,,,,add,R[$rd] = R[$rs] + R[$rx],R-type
 0,,,rx,1,,,,sub,R[$rd] = R[$rs] - R[$rx],R-type
 0,,,rx,2,,,,or,R[$rd] = R[$rs] | R[$rx],R-type
 0,,,rx,3,,,,and,R[$rd] = R[$rs] & R[$rx],R-type
