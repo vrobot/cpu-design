@@ -1,0 +1,3 @@
+7 6 5,4 3 2 1 0,Name,Meaning,Notes
+6,address,jump,PC = (PC & 0xE0) | address,J-type
+7,offset,beq,"if $r0=$r1, PC=PC+1+offset",J-type
